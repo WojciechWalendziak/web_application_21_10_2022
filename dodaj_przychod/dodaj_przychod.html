@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="dodaj_przychod_css.css" type="text/css"/>
+  <script src="dodaj_przychod_js.js"></script>
+</head>
+<tbody onload="current_date()">
+  <h1>Dodaj Przychod:</h1>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="close_modal()">&times;</span>
+      <div id="new_category">
+        <h1>Dodaj Przychod:</h1>
+        <form><label for="parameters">Kategoria:</label><br>
+          <input type="text" id="category_title" name="category_title" placeholder="category title"><br><br>
+        </form>
+        <div id="new_submit">
+          <input class="submit_button" type="submit" value="Submit" onclick="close_modal()">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="form_field">
+    <form>
+      <label for="kwota">Kwota:</label><br>
+      <input type="number" placeholder="0.00" step="0.01" min="0" /><br><br>
+    </form>
+    <form>
+      <label for="data">Data:</label><br>
+      <input type="date" id="date" name="date" placeholder="mm/dd/yyyy"><br><br>
+    </form>
+    <form>
+    <label for="category">Kategoria:</label><br>
+    <select name="karegoria" id="category" onchange="add_new_category()"><br><br>
+      <option value="wynagrodzenie">Wynagrodzenie</option>
+      <option value="odsetki_bankowe">Odsetki bankowe</option>
+      <option value="sprzedaz_na_allegro">Sprzedaz na allegro</option>
+      <option value="inne">Inne</option>
+    </select>
+    </form>
+    <div id="submit">
+      <input class="submit_button" type="submit" value="Submit">
+    </div>
+  </div>
+</tbody>
+
+</html>
+
