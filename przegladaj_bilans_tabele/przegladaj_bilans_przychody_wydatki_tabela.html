@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="przegladaj_bilans_przychody_wydatki_tabela_css.css" type="text/css"/>
 <script src="przegladaj_bilans_tabele.js"></script>
 </head>
@@ -31,146 +33,149 @@
         <option value="niestandardowy">Niestandardowy</option>
       </select>
     </div>
-    <div class="wrapper">
-      <div class="table_frame">
-        <table id="income_table">
-          <tr>
-            <th>Kategorie Przychodow</th>
-            <th>Kwoty</th>
-            <th>Daty</th>
-          </tr>
-          <tr>
-            <td>Wynagrodzenie</td>
-            <td>100.5</td>
-            <td>11-04-2022</td>
-          </tr>
-          <tr>
-            <td>Odsetki</td>
-            <td>75.54</td>
-            <td>25-04-2022</td>
-          </tr>
-          <tr>
-            <td>Sprzedaz na Allegro</td>
-            <td>300.27</td>
-            <td>12-05-2020</td>
-          </tr>
-          <tr>
-            <td>Inne</td>
-            <td>156.75</td>
-            <td>18-05-2022</td>
-          </tr>
-        </table>
-      </div><div class="table_frame">
-        <table id="expence_table">
-          <tr>
-            <th>Kategorie Wydatkow</th>
-            <th>Kwoty</th>
-            <th>Daty</th>
-            <th>Sposob platnosci</th>
-          </tr>
-          <tr>
-            <td>Jedzenie</td>
-            <td>123.55</td>
-            <td>11-10-2022</td>
-            <td>karta debetowa</td>
-          </tr>
-          <tr>
-            <td>Mieszkanie</td>
-            <td>67.43</td>
-            <td>13-09-2021</td>
-            <td>gotowka</td>
-          </tr>
-          <tr>
-            <td>Transport</td>
-            <td>98.55</td>
-            <td>02-09-2022</td>
-            <td>karta kredytowa</td>
-          </tr>
-          <tr>
-            <td>Telekomunikacja</td>
-            <td>34.76</td>
-            <td>07-07-2020</td>
-            <td>gotowka</td>
-          </tr>
-        <tr>
-            <td>Opieka zdrowotna</td>
-            <td>345.23</td>
-            <td>01-01-2020</td>
-            <td>gotowka</td>
-          </tr>
-          <tr>
-            <td>Ubranie</td>
-            <td>235.15</td>
-            <td>30-05-2022</td>
-            <td>karta debetowa</td>
-          </tr>
-          <tr>
-            <td>Higiena</td>
-            <td>155.52</td>
-            <td>05-10-2022</td>
-            <td>karta kredytowa</td>
-          </tr>
-          <tr>
-            <td>Dzieci</td>
-            <td>554.25</td>
-            <td>01-10-2022</td>
-            <td>karta debetowa</td>
-          </tr>
-          <tr>
-            <td>Rozrywka</td>
-            <td>183.56</td>
-            <td>01-01-2022</td>
-            <td>karta kredytowa</td>
-          </tr>
-          <tr>
-            <td>wycieczka</td>
-            <td>256.24</td>
-            <td>04-08-2022</td>
-            <td>gotowka</td>
-          </tr>
-          <tr>
-            <td>Szkolenia</td>
-            <td>192.44</td>
-            <td>09-12-2021</td>
-            <td>karta debetowa</td>
-          </tr>
-          <tr>
-            <td>Ksiazki</td>
-            <td>53.68</td>
-            <td>22-11-2021</td>
-            <td>karta kredytowa</td>
-          </tr>
-          <tr>
-            <td>Oszczednosci</td>
-            <td>873.17</td>
-            <td>31-12-2021</td>
-            <td>gotowka</td>
-          </tr>
-          <tr>
-            <td>Na zlota jesien czyli emeryture</td>
-            <td>654.56</td>
-            <td>12-03-2022</td>
-            <td>karta debetowa</td>
-          </tr>
-          <tr>
-            <td>Splata dlugow</td>
-            <td>523.54</td>
-            <td>10-05-2022</td>
-            <td>karta kredytowa</td>
-          </tr>
-          <tr>
-            <td>Darowizny</td>
-            <td>356.33</td>
-            <td>13-06-2020</td>
-            <td>gotowka</td>
-          </tr>
-          <tr>
-            <td>Inne wydatki</td>
-            <td>560.55</td>
-            <td>23-09-2022</td>
-            <td>karta debetowa</td>
-          </tr>
-        </table>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 my_border">
+          <table class="container" id="income_table">
+            <tr class="row">
+              <th class="col-sm-6">Kategorie Przychodow</th>
+              <th class="col-sm-3">Kwoty</th>
+              <th class="col-sm-3">Daty</th>
+            </tr>
+            <tr class="row">
+              <td class="col-sm-6">Wynagrodzenie</td>
+              <td class="col-sm-3">100.5</td>
+              <td class="col-sm-3">11-04-2022</td>
+            </tr>
+            <tr class="row">
+              <td class="col-sm-6">Odsetki</td>
+              <td class="col-sm-3">75.54</td>
+              <td class="col-sm-3">25-10-2022</td>
+            </tr>
+            <tr class="row">
+              <td class="col-sm-6">Sprzedaz na Allegro</td>
+              <td class="col-sm-3">300.27</td>
+              <td class="col-sm-3">12-05-2020</td>
+            </tr>
+            <tr class="row">
+              <td class="col-sm-6">Inne</td>
+              <td class="col-sm-3">156.75</td>
+              <td class="col-sm-3">29-09-2022</td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-sm-6 my_border">
+          <table class="container" id="expence_table">
+            <tr class="row">
+              <th class="col-sm-3">Kategorie Wydatkow</th>
+              <th class="col-sm-3">Kwoty</th>
+              <th class="col-sm-3">Daty</th>
+              <th class="col-sm-3">Sposob platnosci</th>
+            </tr>
+            <tr class="row">
+              <td class="col-sm-3">Jedzenie</td>
+              <td class="col-sm-3">123.55</td>
+              <td class="col-sm-3">10-12-2021</td>
+              <td class="col-sm-3">gotowka</td>
+            </tr>
+            <tr class="row">
+              <td class="col-sm-3">Mieszkanie</td>
+              <td class="col-sm-3">67.43</td>
+              <td class="col-sm-3">02-10-2022</td>
+              <td class="col-sm-3">karta kredytowa</td>
+            </tr>
+            <tr class="row">
+              <td class="col-sm-3">Transport</td>
+              <td class="col-sm-3">98.55</td>
+              <td class="col-sm-3">26-09-2022</td>
+              <td class="col-sm-3">karta debetowa</td>
+            </tr>
+            <tr class="row">
+              <td class="col-sm-3">Telekomunikacja</td>
+              <td class="col-sm-3">34.76</td>
+              <td class="col-sm-3">30-09-2022</td>
+              <td class="col-sm-3">karta kredytowa</td>
+            </tr>
+            <tr class="row">
+              <td class="col-sm-3">Opieka zdrowotna</td>
+              <td class="col-sm-3">345.23</td>
+              <td class="col-sm-3">18-07-2021</td>
+              <td class="col-sm-3">gotowka</td>
+            </tr>
+            <tr class="row">
+              <td class="col-sm-3">Ubranie</td>
+              <td class="col-sm-3">235.15</td>
+              <td class="col-sm-3">20-12-2020</td>
+              <td class="col-sm-3">karta kredytowa</td>
+            </tr>
+            <tr class="row">
+              <td class="col-sm-3">Higiena</td>
+              <td class="col-sm-3">155.52</td>
+              <td class="col-sm-3">22-01-2021</td>
+              <td class="col-sm-3">karta debetowa</td>
+            </tr>
+            <tr class="row">
+              <td class="col-sm-3">Dzieci</td>
+              <td class="col-sm-3">554.25</td>
+              <td class="col-sm-3">15-06-2022</td>
+              <td class="col-sm-3">gotowka</td>
+            </tr>
+            <tr class="row">
+              <td class="col-sm-3">Rozrywka</td>
+              <td class="col-sm-3">183.56</td>
+              <td class="col-sm-3">11-03-2022</td>
+              <td class="col-sm-3">karta debetowa</td>
+            </tr>
+            <tr class="row">
+              <td class="col-sm-3">wycieczka</td>
+              <td class="col-sm-3">256.24</td>
+              <td class="col-sm-3">22-08-2022</td>
+              <td class="col-sm-3">karta kredytowa</td>
+            </tr>
+            <tr class="row">
+              <td class="col-sm-3">Szkolenia</td>
+              <td class="col-sm-3">24.67</td>
+              <td class="col-sm-3">19-09-2022</td>
+              <td class="col-sm-3">karta debetowa</td>
+            </tr>
+            <tr class="row">
+              <td class="col-sm-3">Ksiazki</td>
+              <td class="col-sm-3">53.68</td>
+              <td class="col-sm-3">07-10-2022</td>
+              <td class="col-sm-3">gotowka</td>
+            </tr>
+            <tr class="row">
+              <td class="col-sm-3">Oszczednosci</td>
+              <td class="col-sm-3">873.17</td>
+              <td class="col-sm-3">14-10-2022</td>
+              <td class="col-sm-3">karta kredytowa</td>
+            </tr>
+            <tr class="row">
+              <td class="col-sm-3">Na zlota jesien czyli emeryture</td>
+              <td class="col-sm-3">654.56</td>
+              <td class="col-sm-3">29-09-2022</td>
+              <td class="col-sm-3">karta debetowa</td>
+            </tr>
+            <tr class="row">
+              <td class="col-sm-3">Splata dlugow</td>
+              <td class="col-sm-3">523.54</td>
+              <td class="col-sm-3">05-10-2021</td>
+              <td class="col-sm-3">karta kredytowa</td>
+            </tr>
+            <tr class="row">
+              <td class="col-sm-3">Darowizny</td>
+              <td class="col-sm-3">356.33</td>
+              <td class="col-sm-3">23-02-2022</td>
+              <td class="col-sm-3">gotowka</td>
+            </tr>
+            <tr class="row">
+              <td class="col-sm-3">Inne wydatki</td>
+              <td class="col-sm-3">560.55</td>
+              <td class="col-sm-3">17-11-2020</td>
+              <td class="col-sm-3">karta debetowa</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
   </div>
