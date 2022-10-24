@@ -15,7 +15,7 @@ h1{
   border: 3px;
 }
 #form_field{
-  width: 80%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
@@ -43,6 +43,31 @@ form{
   margin: 0;
   padding: 10px;
 }
+.table_frame
+{
+  display: inline-block;
+	width: 48%;
+}
+table{
+  display: inline-block;
+  width: 80%;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+  border: 3px solid #118a7e;
+  border-radius: 10px;
+}
+
+th, td {
+  font-size: 15px;
+  width: 100%;
+  border: 1px solid #118a7e;
+  border-radius: 5px;
+}
+th{
+  background-color: pink;
+  color: black;
+}
 .modal {
   display: none; 
   position: absolute;
@@ -68,6 +93,33 @@ form{
   float: right;
   font-size: 28px;
   font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.wrapper
+{
+	width: 100%;
+}
+.header
+{
+	width:100%;
+	padding: 40px 0;
+}
+.logo
+{
+	width: 450px;
+	font-size: 48px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+img
+{
+	width: 100%;
 }
 #submit{
   width: 100%;
@@ -107,4 +159,75 @@ form{
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+.wrapper
+{
+	width: 100%;
+}
+
+.header
+{
+	width:100%;
+	padding: 40px 0;
+}
+.logo
+{
+	width: 450px;
+	font-size: 48px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+img
+{
+	width: 100%;
+}
+.nav
+{ 
+	width: 100%;
+	padding: 10px 0;
+	background-color: #118a7e;
+	text-align: center;
+	border-top: 1px solid #cbf078;
+	border-bottom: 1px solid #cbf078;
+}
+ol
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-size: 18px;
+	height: 35px;
+	line-height: 200%;
+	display: inline-block;
+}
+
+ol a
+{
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+}
+
+ol > li
+{
+	float: left;
+	width: 200px;
+	height: 40px;
+	border-right: 1px dashed #cbf078;
+}
+
+ol > li:first-child
+{
+	border-left: 1px dashed #cbf078;
+}
+
+ol > li:hover
+{
+	background-color: #cbf078;
+}
+
+ol > li:hover > a
+{
+	color: #451717;
 }
